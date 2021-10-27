@@ -3,23 +3,26 @@
     <head>
         <link href="./style.css" rel="stylesheet">
         <script src="./script.js" type="text/javascript" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>This is my calculator</h1>
+        <h1>Calculator</h1>
         <div class="container">
-            <span class="display">0</span>
+            <div class="display"></div>
             <div class="buttons">
                 <table>
                     <tr>
-                        <td id="clear_btn">Cl</td>
-                        <td colspan="2" id="borrar_btn">Borrar</td>
-                        <td>/</td>
+                        <td class="userBtn" id="clear_btn">Cl</td>
+                        <td class="userBtn" colspan="2" id="borrar_btn"><img src="./statics/bsWhite.svg"></td>
+                        <td class="operator">/</td>
                     </tr>
                     <tr>
                         <td class="number">7</td>
                         <td class="number">8</td>
                         <td class="number">9</td>
-                        <td class="operator">x</td>
+                        <td class="operator">*</td>
                     </tr>
                     <tr>
                         <td class="number">4</td>
@@ -36,7 +39,7 @@
                     <tr>
                         <td colspan="2" class="number">0</td>
                         <td class="number">.</td>
-                        <td>=</td>
+                        <td class="equalBtn">=</td>
                     </tr>
                 </table>                        
             </div>
